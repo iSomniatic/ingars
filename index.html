@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Ингарони</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<style>
+    html, body {
+      height: 100%;
+  }
+  
+  </style>
+
+  <script>
+function ingarotion() {
+
+    let userText = document.getElementById("inputText").value
+    let userTextAsArray = [];
+    let translatedUserTextArray = [];
+    let finalResult;
+    let randomDigit50Percent = Math.floor(Math.random() * 2)
+    let randomDigit25Percent = Math.floor(Math.random() * 4)
+    let randomDigit5Percent = Math.floor(Math.random() * 20)
+    //console.log(randomDigit33Percent)
+    //console.log(randomDigit50Percent)
+
+   for (let i = 0; i < userText.length; i++) {
+       userTextAsArray.push(userText[i])
+   }
+
+   console.log(userTextAsArray)
+
+   for (let x = 0; x < userTextAsArray.length; x++) {
+    let userSymbol = userTextAsArray[x];
+    
+    if (userSymbol == "а" || userSymbol == "А") {
+        if (randomDigit25Percent == 0) {
+            translatedUserTextArray.push("aa")
+        } else {
+            translatedUserTextArray.push("a")
+        }
+    } else if (userSymbol == "б" || userSymbol == "Б") {
+        if (randomDigit5Percent == 0) {
+            console.log("haha")
+        } else {
+        translatedUserTextArray.push("b") }
+
+    } else if (userSymbol == "в" || userSymbol == "В") {
+        if (randomDigit25Percent == 1 ) {
+        translatedUserTextArray.push("f")
+        } else {
+        translatedUserTextArray.push("v")
+        }
+
+    } else if (userSymbol == "г" || userSymbol == "Г") {
+        translatedUserTextArray.push("g")
+
+    } else if (userSymbol == "д" || userSymbol == "Д") {
+        translatedUserTextArray.push("d")
+
+    } else if (userSymbol == "е" || userSymbol == "Е") {
+        translatedUserTextArray.push("e")
+
+    } else if (userSymbol == "ё" || userSymbol == "Ё") {
+        translatedUserTextArray.push("jo")
+
+    } else if (userSymbol == "ж" || userSymbol == "Ж") {
+        translatedUserTextArray.push("zh")
+
+    } else if (userSymbol == "з" || userSymbol == "З") {
+        translatedUserTextArray.push("z")
+
+    } else if (userSymbol == "и" || userSymbol == "И") {
+        if (randomDigit25Percent == 1 ) {
+        translatedUserTextArray.push("j")
+        } else {
+        translatedUserTextArray.push("i")
+        }
+    } else if (userSymbol == "й" || userSymbol == "Й") {
+        translatedUserTextArray.push("j")
+
+    } else if (userSymbol == "к" || userSymbol == "К") {
+        translatedUserTextArray.push("k")
+
+    } else if (userSymbol == "л" || userSymbol == "Л") {
+        translatedUserTextArray.push("l")
+
+    } else if (userSymbol == "м" || userSymbol == "М") {
+        translatedUserTextArray.push("m")
+
+    } else if (userSymbol == "н" || userSymbol == "Н") {
+        translatedUserTextArray.push("n")
+
+    } else if (userSymbol == "о" || userSymbol == "О") {
+        if (randomDigit25Percent == 1 ) {
+        translatedUserTextArray.push("a")
+        } else {
+            translatedUserTextArray.push("o")
+        }
+    } else if (userSymbol == "п" || userSymbol == "П") {
+        translatedUserTextArray.push("p")
+    
+    } else if (userSymbol == "р" || userSymbol == "Р") {
+        translatedUserTextArray.push("r")
+
+    } else if (userSymbol == "с" || userSymbol == "С") {
+        if (randomDigit5Percent == 0) {
+            console.log("haha") 
+        } else 
+        {translatedUserTextArray.push("s")}
+
+    } else if (userSymbol == "т" || userSymbol == "Т") {
+        translatedUserTextArray.push("t")
+
+    } else if (userSymbol == "н" || userSymbol == "Н") {
+        translatedUserTextArray.push("n")
+
+    } else if (userSymbol == "ф" || userSymbol == "Ф") {
+        translatedUserTextArray.push("f")
+
+    } else if (userSymbol == "х" || userSymbol == "Х") {
+        translatedUserTextArray.push("h")
+
+    } else if (userSymbol == "ц" || userSymbol == "Ц") {
+        translatedUserTextArray.push("c")
+
+    } else if (userSymbol == "ч" || userSymbol == "Ч") {
+        translatedUserTextArray.push("ch")
+
+    } else if (userSymbol == "ш" || userSymbol == "Ш") {
+        translatedUserTextArray.push("sh")
+
+    } else if (userSymbol == "щ" || userSymbol == "Щ") {
+        translatedUserTextArray.push("ssh")
+
+    } else if (userSymbol == "ъ" || userSymbol == "Ъ") {
+        translatedUserTextArray.push("")
+
+    } else if (userSymbol == "ы" || userSymbol == "Ы") {
+        if (randomDigit25Percent == 0) {
+        translatedUserTextArray.push("i")
+        } else {
+        translatedUserTextArray.push("y")   
+        }
+
+    } else if (userSymbol == "ь" || userSymbol == "Ь") {
+        translatedUserTextArray.push("")
+
+    } else if (userSymbol == "э" || userSymbol == "Э") {
+        translatedUserTextArray.push("ee")
+
+    } else if (userSymbol == "ю" || userSymbol == "Ю") {
+        if (randomDigit50Percent == 0 ) {
+        translatedUserTextArray.push("ju") 
+        } else {
+            translatedUserTextArray.push("yu")    
+        }
+
+    } else if (userSymbol == "я" || userSymbol == "Я") {
+        if (randomDigit25Percent == 0 ) {
+            translatedUserTextArray.push("ja")
+        } else if (randomDigit25Percent == 1 ) {
+            translatedUserTextArray.push("ya")
+        } else {
+            translatedUserTextArray.push("jja")
+        }
+    
+    } else {
+        translatedUserTextArray.push(userSymbol)
+    }
+
+
+  
+    
+   }
+   if (randomDigit5Percent < 4 ) {
+       translatedUserTextArray.unshift("oi bliaa... ");
+   }
+
+
+
+   finalResult = translatedUserTextArray.join("");
+
+   document.getElementById("pictureID").innerHTML = '<img src="image2.png" width="200"/>'
+
+
+document.getElementById("resultHere").innerHTML = "<b>Вот как это напишет Ингароня:</b> <br/> " + finalResult;
+console.log(finalResult)
+console.log(translatedUserTextArray)
+
+}
+
+  </script>
+</head>
+<body>
+    
+    <div class="container h-100 d-flex justify-content-center">
+        <div class="jumbotron my-auto">
+          <h3 class="display-2">Генератор Ингарони</h3><br/> 
+          <div class="col-sm-12 text-center">
+            <textarea class="form-control input-lg" id="inputText" type="text" placeholder="Текст"> </textarea>
+              </div><br/>
+              <div class="col-sm-12 text-center">
+               
+                <div class="col-sm-12 text-center">
+                    <button onclick="ingarotion()" id="translate">Ингарнуть по тексту</button>
+                  </div><br/><br/>
+                  
+                  <div class="col-sm-12 text-center" id="resultHere"><br/>
+                    
+                  </div>
+                  <div class="col-sm-12 text-center" id="pictureID"><br/>
+                    <img src="image1.png" width="200"/>
+                  </div>
+                  
+            </div>
+    
+        </div>
+</body>
+</html>
